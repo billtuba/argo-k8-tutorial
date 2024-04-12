@@ -9,7 +9,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       app: nginx
   template:
     metadata:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: billtuba13/ngnix:v0.1.0
+          image: billtuba13/nginx:v0.1.0
           ports:
             - containerPort: 80
 
